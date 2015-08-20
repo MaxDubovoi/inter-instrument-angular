@@ -1,0 +1,8 @@
+<IfModule mod_rewrite.c>
+    AddDefaultCharset utf-8
+    RewriteEngine On
+    RewriteCond %{REQUEST_FILENAME} -f
+    RewriteRule ^(.*) $1 [L]
+
+    RewriteRule ^(.*) index.html [QSA,L]
+</IfModule>
