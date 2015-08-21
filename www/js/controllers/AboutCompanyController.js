@@ -1,3 +1,9 @@
 InterInstrumentApp.controller("AboutCompanyController", function($scope, $rootScope, $state) {
-$rootScope.imageSrc='aboutCompany'
+    $rootScope.imageSrc='aboutCompany';
+    $rootScope.leftMenu=[
+        {text:'История',url:'history'},
+        {text:'миссия и цели',url:'aim'},
+        {text:'Вакансии',url:'vacancy'},
+        {text:'Партнеры',url:'partner'}
+    ]
 });

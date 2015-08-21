@@ -546,6 +546,9 @@ Global elements
   width: 168px;
   border-bottom: solid 1px;
 }
+.navigation-page a {
+  color: #000;
+}
 .navigation-page li {
   zoom: 1;
   position: relative;
@@ -583,7 +586,7 @@ Global elements
 }
 .address {
   position: absolute;
-  top: 400px;
+  top: 420px;
   left: 135px;
 }
 .address p {
@@ -656,7 +659,7 @@ Global elements
   -webkit-border-radius: 5px;
   border-radius: 5px;
 }
-/**RIGT SIDE**/
+/**RIGHT SIDE**/
 .right-side {
   position: relative;
   width: 290px;
