@@ -1,10 +1,10 @@
 <div class="central">
-    <img class="central-photo" src="images/photo-products.jpg" alt="">
-    <ul class="navigation-site">
-        <li><a ui-sref="aboutCompany">О компании</a></li>
-        <li><a ui-sref="products">Продукция</a></li>
-        <li><a ui-sref="services">Услуги</a></li>
-        <li><a ui-sref="production">Производство</a></li>
-        <li><a ui-sref="contacts">Контакты</a></li>
+    <img class="central-photo" ng-animate="'animate'" ng-src="images/photo-{{imageSrc}}.jpg"   alt="">
+    <ul class="navigation-site" >
+        <a ui-sref="aboutCompany"  ><li>О компании</li></a>
+        <a ui-sref="products" ><li>Продукция</li></a>
+        <a ui-sref="services" ><li>Услуги</li></a>
+        <a ui-sref="production" ><li>Производство</li></a>
+        <a ui-sref="contacts" ><li>Контакты</li></a>
     </ul>
 </div>
