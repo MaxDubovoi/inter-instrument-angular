@@ -4,5 +4,7 @@ InterInstrumentApp.controller("ProductionController", function($scope, $rootScop
         {text:'Технологии',url:'technology'},
         {text:'Производство',url:'production'},
         {text:'Сервис',url:'service'}
-    ]
+    ];
+    $rootScope.menuHide = '';
+    $rootScope.activePage='technology';
 });

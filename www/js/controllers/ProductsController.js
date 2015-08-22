@@ -4,5 +4,7 @@ InterInstrumentApp.controller("ProductsController", function($scope, $rootScope,
         {text:'Оборудование',url:'equipment'},
         {text:'Инструмент',url:'tool'},
         {text:'Оснастка',url:'snap-in'}
-    ]
+    ];
+    $rootScope.menuHide = '';
+    $rootScope.activePage='equipment';
 });

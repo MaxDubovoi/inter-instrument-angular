@@ -86,7 +86,7 @@ h1,h2,h3,h4,ul,li
 a
   text-decoration none
   &:visited
-    color #ffffff
+    color #000
   &:focus
     outline none
 
@@ -303,6 +303,8 @@ Global elements
 .navigation-site
   display block
   margin 244px 0 4px 0// bug!!!!
+  a
+    color #FFFFFF
   li
     display inline-block
     width 115px
@@ -323,6 +325,11 @@ Global elements
       transition 0.3s
       background linear-gradient(to bottom, #3e3e3f 0%, #3e3e3f 6%, #3e3e3f 11%, #77797c 16%, #595959 24%, #3e3e3f 32%, #3e3e3f 60%, #3e3e3f 100%)
       border-radius 5px
+.menu-active
+  background #f02f17;
+  background linear-gradient(to bottom, #f02f17 0%, #f02f17 5%, #f16f5c 12%, #e73827 19%, #f6290c 24%, #f02f17 85%, #f02f17 100%)
+  transition 0.3s
+  border-radius 5px
 /**RIGHT SIDE**/
 .right-side
   position relative
@@ -361,6 +368,8 @@ Global elements
 .animate-enter
 .animate-leave
   transition 500ms cubic-bezier(0.250 0.250 0.750 0.750) all
+.menu-hide
+  visibility hidden
 
 
 

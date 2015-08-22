@@ -5,7 +5,7 @@ InterInstrumentApp.config(function (localStorageServiceProvider, $httpProvider, 
     $httpProvider.defaults.headers.common["X-Requested-With"] = 'XMLHttpRequest';
 
     $stateProvider
-        .state('aboutCompany', {
+        /*.state('aboutCompany', {
             url: "/",
             templateUrl: "/views/about.html",
             controller: 'AboutCompanyController'
@@ -14,11 +14,6 @@ InterInstrumentApp.config(function (localStorageServiceProvider, $httpProvider, 
             url: "/products",
             templateUrl: "/views/products.html",
             controller: 'ProductsController'
-        })
-        .state('contacts', {
-            url: "/contacts",
-            templateUrl: "/views/contacts.html",
-            controller: 'ContactsController'
         })
         .state('production', {
             url: "/production",
@@ -29,26 +24,80 @@ InterInstrumentApp.config(function (localStorageServiceProvider, $httpProvider, 
             url: "/services",
             templateUrl: "/views/services.html",
             controller: 'ServicesController'
+        })*/
+        .state('contacts', {
+            url: "/contacts",
+            templateUrl: "/views/contacts.html",
+            controller: 'ContactsController'
         })
     /*ABOUT COMPANY MENU*/
         .state('history', {
-            url: "/about/history",
+            url: "/",
             templateUrl: "/views/aboutCompany/history.html",
             controller: 'AboutCompanyController'
         })
         .state('aim', {
-            url: "/about/aim",
+            url: "/aim",
             templateUrl: "/views/aboutCompany/aim.html",
             controller: 'AboutCompanyController'
         })
         .state('vacancy', {
-            url: "/about/vacancy",
+            url: "/vacancy",
             templateUrl: "/views/aboutCompany/vacancy.html",
             controller: 'AboutCompanyController'
         })
         .state('partner', {
-            url: "/about/partner",
+            url: "/partners",
             templateUrl: "/views/aboutCompany/partner.html",
             controller: 'AboutCompanyController'
         })
+    /*PRODUCTS MENU*/
+        .state('equipment', {
+            url: "/equipment",
+            templateUrl: "/views/products/equipment.html",
+            controller: 'ProductsController'
+        })
+        .state('tool', {
+            url: "/tool",
+            templateUrl: "/views/products/tool.html",
+            controller: 'ProductsController'
+        })
+        .state('snap-in', {
+            url: "/snap-in",
+            templateUrl: "/views/products/snap-in.html",
+            controller: 'ProductsController'
+        })
+    /*SERVICES MENU*/
+        .state('engineering', {
+            url: "/engineering",
+            templateUrl: "/views/services/engineering.html",
+            controller: 'ServicesController'
+        })
+        .state('manufacture', {
+            url: "/manufacture",
+            templateUrl: "/views/services/manufacture.html",
+            controller: 'ServicesController'
+        })
+        .state('maintenance', {
+            url: "/maintenance",
+            templateUrl: "/views/services/maintenance.html",
+            controller: 'ServicesController'
+        })
+    /*PRODUCTION MENU*/
+        .state('technology', {
+            url: "/technology",
+            templateUrl: "/views/production/technology.html",
+            controller: 'ProductionController'
+        })
+        .state('production', {
+            url: "/production",
+            templateUrl: "/views/production/production.html",
+            controller: 'ProductionController'
+        })
+        .state('service', {
+            url: "/service",
+            templateUrl: "/views/production/service.html",
+            controller: 'ProductionController'
+        })
+
 });

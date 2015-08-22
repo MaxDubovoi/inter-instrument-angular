@@ -1,15 +1,16 @@
 <div class="left-side">
     <img class="logo" src="images/logo.png" alt="">
-    <ul class="navigation-page">
+    <ul class="navigation-page" ng-class="menuHide">
         <a ng-repeat="item in leftMenu" ui-sref="{{item.url}}"> <li ><span >{{item.text}}</span></li></a>
     </ul>
     <div class="address">
-        <p>49019, г. Днепропетровск,<br>
+
+            <p>49019, г. Днепропетровск,<br>
             ул. Ударников, 30 <br>
             Факс: +38 (056)374-99-14 <br>
             Тел.: +38 (056) 374-99-10, <br>
             +38 (056) 374-99-11,<br>
             +38 (056) 374-99-12.  </p>
-        <a href=""> <i class="icon address-arrow"></i></a>
+        <a ui-sref="contacts"><i class="icon address-arrow"></i></a>
     </div>
 </div>

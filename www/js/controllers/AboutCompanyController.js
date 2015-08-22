@@ -5,5 +5,8 @@ InterInstrumentApp.controller("AboutCompanyController", function($scope, $rootSc
         {text:'миссия и цели',url:'aim'},
         {text:'Вакансии',url:'vacancy'},
         {text:'Партнеры',url:'partner'}
-    ]
+    ];
+    $rootScope.menuHide = '';
+    $rootScope.activePage='history';
+
 });
