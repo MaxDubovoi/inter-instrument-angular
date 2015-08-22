@@ -651,6 +651,17 @@ Global elements
   -webkit-border-radius: 5px;
   border-radius: 5px;
 }
+.navigation-site li.menu-active {
+  background: #f02f17;
+  background: -webkit-linear-gradient(top, #f02f17 0%, #f02f17 5%, #f16f5c 12%, #e73827 19%, #f6290c 24%, #f02f17 85%, #f02f17 100%);
+  background: -moz-linear-gradient(top, #f02f17 0%, #f02f17 5%, #f16f5c 12%, #e73827 19%, #f6290c 24%, #f02f17 85%, #f02f17 100%);
+  background: -o-linear-gradient(top, #f02f17 0%, #f02f17 5%, #f16f5c 12%, #e73827 19%, #f6290c 24%, #f02f17 85%, #f02f17 100%);
+  background: -ms-linear-gradient(top, #f02f17 0%, #f02f17 5%, #f16f5c 12%, #e73827 19%, #f6290c 24%, #f02f17 85%, #f02f17 100%);
+  background: linear-gradient(to bottom, #f02f17 0%, #f02f17 5%, #f16f5c 12%, #e73827 19%, #f6290c 24%, #f02f17 85%, #f02f17 100%);
+  transition: 0.3s;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+}
 .navigation-site li:hover {
   background: #3e3e3f;
   transition: 0.3s;
@@ -659,17 +670,6 @@ Global elements
   background: -o-linear-gradient(top, #3e3e3f 0%, #3e3e3f 6%, #3e3e3f 11%, #77797c 16%, #595959 24%, #3e3e3f 32%, #3e3e3f 60%, #3e3e3f 100%);
   background: -ms-linear-gradient(top, #3e3e3f 0%, #3e3e3f 6%, #3e3e3f 11%, #77797c 16%, #595959 24%, #3e3e3f 32%, #3e3e3f 60%, #3e3e3f 100%);
   background: linear-gradient(to bottom, #3e3e3f 0%, #3e3e3f 6%, #3e3e3f 11%, #77797c 16%, #595959 24%, #3e3e3f 32%, #3e3e3f 60%, #3e3e3f 100%);
-  -webkit-border-radius: 5px;
-  border-radius: 5px;
-}
-.menu-active {
-  background: #f02f17;
-  background: -webkit-linear-gradient(top, #f02f17 0%, #f02f17 5%, #f16f5c 12%, #e73827 19%, #f6290c 24%, #f02f17 85%, #f02f17 100%);
-  background: -moz-linear-gradient(top, #f02f17 0%, #f02f17 5%, #f16f5c 12%, #e73827 19%, #f6290c 24%, #f02f17 85%, #f02f17 100%);
-  background: -o-linear-gradient(top, #f02f17 0%, #f02f17 5%, #f16f5c 12%, #e73827 19%, #f6290c 24%, #f02f17 85%, #f02f17 100%);
-  background: -ms-linear-gradient(top, #f02f17 0%, #f02f17 5%, #f16f5c 12%, #e73827 19%, #f6290c 24%, #f02f17 85%, #f02f17 100%);
-  background: linear-gradient(to bottom, #f02f17 0%, #f02f17 5%, #f16f5c 12%, #e73827 19%, #f6290c 24%, #f02f17 85%, #f02f17 100%);
-  transition: 0.3s;
   -webkit-border-radius: 5px;
   border-radius: 5px;
 }

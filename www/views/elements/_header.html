@@ -1,10 +1,10 @@
 <div class="central">
     <img class="central-photo"  ng-src="images/photo-{{imageSrc}}.jpg"   alt="">
     <ul class="navigation-site" >
-        <a ui-sref="history"  ><li ng-class="{menu-active:activePage=='history'}">О компании</li></a>
-        <a ui-sref="equipment" ><li ng-class="{activePage==equipment:menu-active}">Продукция</li></a>
-        <a ui-sref="engineering" ><li ng-class="{activePage==engineering:menu-active}">Услуги</li></a>
-        <a ui-sref="technology" ><li ng-class="{activePage==technology:menu-active}">Производство</li></a>
-        <a ui-sref="contacts" ><li ng-class="{activePage==contacts:menu-active}">Контакты</li></a>
+        <a ui-sref="history"  ><li  ng-class="{'menu-active':activePage=='history'}">О компании</li></a>
+        <a ui-sref="equipment" ><li ng-class="{'menu-active':activePage=='equipment'}">Продукция</li></a>
+        <a ui-sref="engineering" ><li ng-class="{'menu-active':activePage=='engineering'}">Услуги</li></a>
+        <a ui-sref="technology" ><li ng-class="{'menu-active':activePage=='technology'}">Производство</li></a>
+        <a ui-sref="contacts" ><li ng-class="{'menu-active':activePage=='contacts'}">Контакты</li></a>
     </ul>
 </div>

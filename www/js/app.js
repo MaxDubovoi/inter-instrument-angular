@@ -34,60 +34,60 @@ InterInstrumentApp.config(function (localStorageServiceProvider, $httpProvider, 
         .state('history', {
             url: "/",
             templateUrl: "/views/aboutCompany/history.html",
-            controller: 'AboutCompanyController'
+            controller: 'HistoryController'
         })
         .state('aim', {
             url: "/aim",
             templateUrl: "/views/aboutCompany/aim.html",
-            controller: 'AboutCompanyController'
+            controller: 'AimController'
         })
         .state('vacancy', {
             url: "/vacancy",
             templateUrl: "/views/aboutCompany/vacancy.html",
-            controller: 'AboutCompanyController'
+            controller: 'VacancyController'
         })
         .state('partner', {
             url: "/partners",
             templateUrl: "/views/aboutCompany/partner.html",
-            controller: 'AboutCompanyController'
+            controller: 'PartnerController'
         })
     /*PRODUCTS MENU*/
         .state('equipment', {
             url: "/equipment",
             templateUrl: "/views/products/equipment.html",
-            controller: 'ProductsController'
+            controller: 'EquipmentController'
         })
         .state('tool', {
             url: "/tool",
             templateUrl: "/views/products/tool.html",
-            controller: 'ProductsController'
+            controller: 'ToolController'
         })
         .state('snap-in', {
             url: "/snap-in",
             templateUrl: "/views/products/snap-in.html",
-            controller: 'ProductsController'
+            controller: 'Snap-inController'
         })
     /*SERVICES MENU*/
         .state('engineering', {
             url: "/engineering",
             templateUrl: "/views/services/engineering.html",
-            controller: 'ServicesController'
+            controller: 'EngineeringController'
         })
         .state('manufacture', {
             url: "/manufacture",
             templateUrl: "/views/services/manufacture.html",
-            controller: 'ServicesController'
+            controller: 'ManufactureController'
         })
         .state('maintenance', {
             url: "/maintenance",
             templateUrl: "/views/services/maintenance.html",
-            controller: 'ServicesController'
+            controller: 'MaintenanceController'
         })
     /*PRODUCTION MENU*/
         .state('technology', {
             url: "/technology",
             templateUrl: "/views/production/technology.html",
-            controller: 'ProductionController'
+            controller: 'TechnologyController'
         })
         .state('production', {
             url: "/production",
@@ -97,7 +97,7 @@ InterInstrumentApp.config(function (localStorageServiceProvider, $httpProvider, 
         .state('service', {
             url: "/service",
             templateUrl: "/views/production/service.html",
-            controller: 'ProductionController'
+            controller: 'ServiceController'
         })
 
 });

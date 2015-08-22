@@ -1,4 +1,4 @@
-InterInstrumentApp.controller("ProductsController", function($scope, $rootScope, $state) {
+InterInstrumentApp.controller("MaintenanceController", function($scope, $rootScope, $state) {
     $rootScope.imageSrc='products'
     $rootScope.leftMenu=[
         {text:'Оборудование',url:'equipment'},
