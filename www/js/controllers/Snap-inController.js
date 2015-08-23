@@ -6,5 +6,6 @@ InterInstrumentApp.controller("Snap-inController", function($scope, $rootScope, 
         {text:'Оснастка',url:'snap-in'}
     ];
     $rootScope.menuHide = '';
-    $rootScope.activePage='equipment';
+    $rootScope.activePage='products';
+    $rootScope.activeSubPage='snap-in';
 });

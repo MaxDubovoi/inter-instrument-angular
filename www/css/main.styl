@@ -255,12 +255,6 @@ Global elements
   a
     color #000000
   li
-    span
-      font-size 16px
-      font-family "DINPro-Medium", "Times New Roman", sans-serif
-      line-height 32px
-      text-transform uppercase
-      margin 0 0 0 8px
     clearfix()
     position relative
     list-style none
@@ -274,10 +268,20 @@ Global elements
       width 15px
       height 32px
       background-position -274px -74px
+    &.side-bar-active
+      &:after
+        background-image url(spriteLink)
+        background-position -293px -74px
     &:hover
       &:after
         background-image url(spriteLink)
         background-position -293px -74px
+    span
+      font-size 16px
+      font-family "DINPro-Medium", "Times New Roman", sans-serif
+      line-height 32px
+      text-transform uppercase
+      margin 0 0 0 8px
 .address
   position absolute
   top 420px
@@ -286,6 +290,9 @@ Global elements
     display inline-block
     font-size 11px
     font-family "MyriadPro-Regular", serif
+.menu-hide
+  visibility hidden
+
 
 
 /**CENTRAL**/
@@ -368,8 +375,6 @@ Global elements
 .animate-enter
 .animate-leave
   transition 500ms cubic-bezier(0.250 0.250 0.750 0.750) all
-.menu-hide
-  visibility hidden
 
 
 

@@ -6,5 +6,6 @@ InterInstrumentApp.controller("ServiceController", function($scope, $rootScope, 
         {text:'Сервис',url:'service'}
     ];
     $rootScope.menuHide = '';
-    $rootScope.activePage='technology';
+    $rootScope.activePage='production';
+    $rootScope.activeSubPage='service';
 });

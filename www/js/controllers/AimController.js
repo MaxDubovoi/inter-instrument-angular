@@ -7,6 +7,7 @@ InterInstrumentApp.controller("AimController", function($scope, $rootScope, $sta
         {text:'Партнеры',url:'partner'}
     ];
     $rootScope.menuHide = '';
-    $rootScope.activePage='history';
+    $rootScope.activePage='aboutCompany';
+    $rootScope.activeSubPage='aim';
 
 });

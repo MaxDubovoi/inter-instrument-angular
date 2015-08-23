@@ -6,5 +6,6 @@ InterInstrumentApp.controller("TechnologyController", function($scope, $rootScop
         {text:'Сервис',url:'service'}
     ];
     $rootScope.menuHide = '';
-    $rootScope.activePage='technology';
+    $rootScope.activePage='production';
+    $rootScope.activeSubPage='technology';
 });

@@ -49,7 +49,7 @@ InterInstrumentApp.config(function (localStorageServiceProvider, $httpProvider, 
         .state('partner', {
             url: "/partners",
             templateUrl: "/views/aboutCompany/partner.html",
-            controller: 'PartnerController'
+            controller: 'PartnersController'
         })
     /*PRODUCTS MENU*/
         .state('equipment', {

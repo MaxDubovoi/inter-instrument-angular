@@ -1,10 +1,11 @@
 InterInstrumentApp.controller("MaintenanceController", function($scope, $rootScope, $state) {
-    $rootScope.imageSrc='products'
+    $rootScope.imageSrc='services';
     $rootScope.leftMenu=[
-        {text:'Оборудование',url:'equipment'},
-        {text:'Инструмент',url:'tool'},
-        {text:'Оснастка',url:'snap-in'}
+        {text:'Проектирование',url:'engineering'},
+        {text:'Изготовление',url:'manufacture'},
+        {text:'Сопровождение',url:'maintenance'}
     ];
     $rootScope.menuHide = '';
-    $rootScope.activePage='equipment';
+    $rootScope.activePage='services';
+    $rootScope.activeSubPage='maintenance';
 });
