@@ -252,14 +252,18 @@ Global elements
   margin 109px 0 0 135px
   width 168px
   border-bottom solid 1px
-  a
+  .link
     color #000000
-  li
-    clearfix()
     position relative
-    list-style none
     border-top solid 1px
+    display inline-block
+    padding 2px 0 2px 8px
+    font-size 16px
+    font-family "DINPro-Medium", "Times New Roman", sans-serif
+    line-height 32px
+    text-transform uppercase
     &:after
+      content ''
       display block
       float right
       position relative
@@ -276,12 +280,6 @@ Global elements
       &:after
         background-image url(spriteLink)
         background-position -293px -74px
-    span
-      font-size 16px
-      font-family "DINPro-Medium", "Times New Roman", sans-serif
-      line-height 32px
-      text-transform uppercase
-      margin 0 0 0 8px
 .address
   position absolute
   top 420px
