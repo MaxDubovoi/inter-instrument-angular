@@ -63,8 +63,8 @@ Global elements
 .visible {
   visibility: visible !important;
   opacity: 1 !important;
-  -ms-filter: none !important;
-  filter: none !important;
+  -ms-filter: none;
+  filter: none;
 }
 .clear {
   clear: both;
@@ -547,32 +547,38 @@ Global elements
   border-bottom: solid 1px;
 }
 .navigation-page .link {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
   color: #000;
   position: relative;
-  border-top: solid 1px;
+  padding: 0 19px 0 0;
   display: inline-block;
-  padding: 2px 0 2px 8px;
   font-size: 16px;
   font-family: "DINPro-Medium", "Times New Roman", sans-serif;
-  line-height: 32px;
   text-transform: uppercase;
 }
-.navigation-page .link:after {
-  content: '';
-  display: block;
-  float: right;
-  position: relative;
-  right: -19px;
+.navigation-page .link span {
+  display: inline-block;
+  min-width: 168px;
+  line-height: 30px;
+  padding: 0 0 0 8px;
+  border-top: solid 1px;
+}
+.navigation-page .link .icon-arr {
+  position: absolute;
+  top: 0;
+  right: 0;
   background-image: url("../images/sprite.png");
   width: 15px;
   height: 32px;
   background-position: -274px -74px;
 }
-.navigation-page .link.side-bar-active:after {
+.navigation-page .link.side-bar-active .icon-arr {
   background-image: url("../images/sprite.png");
   background-position: -293px -74px;
 }
-.navigation-page .link:hover:after {
+.navigation-page .link:hover .icon-arr {
   background-image: url("../images/sprite.png");
   background-position: -293px -74px;
 }
@@ -690,22 +696,16 @@ Global elements
 .partners li {
   margin: 20px 0 0 0;
 }
+.fixed-holder {
+  position: fixed;
+  top: 0;
+  left: 0;
+}
 /**CONTENT**/
 .content {
   width: 589px;
-  height: 476px;
-  float: left;
-  background: url("../images/bg-txt.png");
-  margin: 0 0 54px 0;
-  zoom: 1;
-}
-.content:before,
-.content:after {
-  content: "";
-  display: table;
-}
-.content:after {
-  clear: both;
+  margin: 278px 0 0 364px;
+  background: #e6e8e9 url("../images/bg-txt.png") no-repeat;
 }
 .content p {
   font-family: "MyriadPro-Regular", serif;

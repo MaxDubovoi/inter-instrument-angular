@@ -4,7 +4,7 @@
         <a ng-repeat="item in leftMenu"
            ng-class="{'side-bar-active': activeSubPage == item.url}"
            ui-sref="{{ item.url }}"
-           class="link">{{ item.text }} </a>
+           class="link"><span>{{ item.text }}</span><i class="icon-arr"></i></a>
     </div>
     <div class="address">
 

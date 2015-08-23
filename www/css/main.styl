@@ -253,31 +253,32 @@ Global elements
   width 168px
   border-bottom solid 1px
   .link
+    box-sizing border-box
     color #000000
     position relative
-    border-top solid 1px
+    padding 0 19px 0 0
     display inline-block
-    padding 2px 0 2px 8px
     font-size 16px
     font-family "DINPro-Medium", "Times New Roman", sans-serif
-    line-height 32px
     text-transform uppercase
-    &:after
-      content ''
-      display block
-      float right
-      position relative
-      right -19px
+    span
+      display inline-block
+      min-width 168px
+      line-height 30px
+      padding 0 0 0 8px
+      border-top solid 1px
+    .icon-arr
+      absolute top right
       background-image url(spriteLink)
       width 15px
       height 32px
       background-position -274px -74px
     &.side-bar-active
-      &:after
+      .icon-arr
         background-image url(spriteLink)
         background-position -293px -74px
     &:hover
-      &:after
+      .icon-arr
         background-image url(spriteLink)
         background-position -293px -74px
 .address
@@ -347,16 +348,13 @@ Global elements
   li
     margin 20px 0 0 0
 
-
+.fixed-holder
+  fixed top left
 /**CONTENT**/
 .content
   width 589px
-  height 476px////FIX THIS
-  float left
-  background url(../images/bg-txt.png);
-  margin 0 0 54px 0
-  //overflow-y  scroll
-  clearfix()
+  margin 278px 0 0 364px
+  background #e6e8e9 url(../images/bg-txt.png) no-repeat;
   p
     font-family "MyriadPro-Regular", serif
     font-size 10px

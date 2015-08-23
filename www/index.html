@@ -45,9 +45,11 @@
 <!-- BEGIN wrapper-->
 <div class="wrapper">
     <div class="min-width">
-        <ng-include src=" 'views/elements/_left-side.html' "></ng-include>
-        <ng-include src=" 'views/elements/_header.html' "></ng-include>
-        <ng-include src=" 'views/elements/_right-side.html' "></ng-include>
+        <div class="fixed-holder">
+            <ng-include src=" 'views/elements/_left-side.html' "></ng-include>
+            <ng-include src=" 'views/elements/_header.html' "></ng-include>
+            <ng-include src=" 'views/elements/_right-side.html' "></ng-include>
+        </div>
 
         <div class="content">
             <div ui-view></div>
