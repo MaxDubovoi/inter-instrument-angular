@@ -107,7 +107,6 @@ Global elements
   visibility hidden
   opacity 0 !important
 .hidden
-  display none !important
   visibility hidden !important
 .visible
   visibility visible !important
@@ -129,10 +128,8 @@ Global elements
     clear both
 .min-width
   position relative
-  height 100%
-  max-width 1280px
-  min-width 1280px
   margin 0 auto
+  width 1280px
 
 /**** ICONS ****/
 .icon
@@ -238,20 +235,12 @@ Global elements
 /**** PAGES ****/
 /**LEFT SIDE**/
 .left-side
+  absolute top 300px left 10%
   clearfix()
-  width 400px
-  height 730px
-  position relative
-  float left
-  top 0
-  left 0
 .logo
   display block
-  margin 82px 0 0 111px
 .navigation-page
-  margin 109px 0 0 135px
-  width 168px
-  border-bottom solid 1px
+  max-width 195px
   .link
     box-sizing border-box
     color #000000
@@ -261,12 +250,15 @@ Global elements
     font-size 16px
     font-family "DINPro-Medium", "Times New Roman", sans-serif
     text-transform uppercase
+    &:first-child
+      span
+        border-top solid 1px #000000
     span
       display inline-block
       min-width 168px
       line-height 30px
       padding 0 0 0 8px
-      border-top solid 1px
+      border-bottom solid 1px #000000
     .icon-arr
       absolute top right
       background-image url(spriteLink)
@@ -282,41 +274,40 @@ Global elements
         background-image url(spriteLink)
         background-position -293px -74px
 .address
-  position absolute
-  top 420px
-  left 135px
+  margin 10px 0 0 6px
   p
     display inline-block
     font-size 11px
     font-family "MyriadPro-Regular", serif
-.menu-hide
-  visibility hidden
-
-
 
 /**CENTRAL**/
 .central
-  position relative
-  top 0
-  width 880px
+  margin auto
+  max-width 1189px
   background #FFFFFF
-  height 100%
-  float left
-  clearfix()
-.central-photo
-  display block
-  float left
-  clearfix()
+  .central-photo
+  .logo-link
+    display inline-block
+    vertical-align middle
+  .logo-link
+    margin 0 83px 0 0
+  .central-photo
+    max-width 880px
+  .navigation-holder
+    position relative
+    z-index 2
+    background #ffffff
+    text-align center
+    .navigation-site
+      display inline-block
 .navigation-site
   display block
-  margin 244px 0 4px 0
+  margin 5px 0 4px 0
   a
     color #FFFFFF
-  li
     display inline-block
     width 115px
     height 21px
-    color #ffffff
     text-align center
     font-size 12px
     font-family "DINPro-Regular", "Times New Roman",sans-serif
@@ -332,6 +323,11 @@ Global elements
       background linear-gradient(to bottom, #f02f17 0%, #f02f17 5%, #f16f5c 12%, #e73827 19%, #f6290c 24%, #f02f17 85%, #f02f17 100%)
       transition 0.3s
       border-radius 5px
+      &:hover
+        background #f02f17
+        background linear-gradient(to bottom, #f02f17 0%, #f02f17 5%, #f16f5c 12%, #e73827 19%, #f6290c 24%, #f02f17 85%, #f02f17 100%)
+        transition 0.3s
+        border-radius 5px
     &:hover
       background: #3e3e3f
       transition 0.3s
@@ -339,22 +335,37 @@ Global elements
       border-radius 5px
 /**RIGHT SIDE**/
 .right-side
-  position relative
-  width 290px
-  height 100%
-  float right
-  clearfix()
+  absolute top 300px right 15%
 .partners
-  margin 0 0 0 104px
   li
     margin 20px 0 0 0
 
 .fixed-holder
-  fixed top left
+  &.sticky-holder
+    width 1225px
+    position relative
+
+.sticky
+  .fixed-content
+    position fixed
+  .navigation-holder
+  .site-content
+    margin auto
+  .site-content
+    margin-top 30px
+  .navigation-holder
+    top 0
+    width 1189px
+    transition none
+  .left-side
+  .right-side
+    top 60px
 /**CONTENT**/
-.content
+.site-content
+  position relative
+  z-index 1
   width 589px
-  margin 278px 0 0 364px
+  margin 0 auto
   background #e6e8e9 url(../images/bg-txt.png) no-repeat;
   p
     font-family "MyriadPro-Regular", serif
@@ -375,7 +386,54 @@ Global elements
 
 
 
+@media screen and (max-width: 1225px)
+  .left-side
+    left 5%
+  .right-side
+    right 11%
 
+
+@media screen and (min-width: 1500px)
+  .left-side
+    left 12%
+  .right-side
+    right 16.6%
+
+@media screen and (min-width: 1700px)
+  .left-side
+    left 18%
+  .right-side
+    right 21%
+
+@media screen and (min-width: 2030px)
+  .left-side
+    left 23%
+  .right-side
+    right 26%
+
+@media screen and (min-width: 2330px)
+  .left-side
+    left 25%
+  .right-side
+    right 28%
+
+@media screen and (min-width: 2630px)
+  .left-side
+    left 29%
+  .right-side
+    right 31%
+
+@media screen and (min-width: 2930px)
+  .left-side
+    left 31%
+  .right-side
+    right 33%
+
+@media screen and (min-width: 3100px)
+  .left-side
+    left 32%
+  .right-side
+    right 34%
 
 
 

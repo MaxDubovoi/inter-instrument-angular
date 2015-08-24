@@ -1,13 +1,11 @@
-<div class="left-side">
-    <img class="logo" src="images/logo.png" alt="">
-    <div class="navigation-page" ng-show="activePage != 'contacts'">
+<div class="fixed-content left-side">
+    <div class="navigation-page" ng-class="{'hidden' : activePage == 'contacts'}">
         <a ng-repeat="item in leftMenu"
            ng-class="{'side-bar-active': activeSubPage == item.url}"
            ui-sref="{{ item.url }}"
            class="link"><span>{{ item.text }}</span><i class="icon-arr"></i></a>
     </div>
     <div class="address">
-
             <p>49019, г. Днепропетровск,<br>
             ул. Ударников, 30 <br>
             Факс: +38 (056)374-99-14 <br>

@@ -44,14 +44,13 @@
 <body ng-controller="ApplicationController">
 <!-- BEGIN wrapper-->
 <div class="wrapper">
+    <div class="fixed-holder">
+        <ng-include src=" 'views/elements/_left-side.html' "></ng-include>
+        <ng-include src=" 'views/elements/_right-side.html' "></ng-include>
+    </div>
     <div class="min-width">
-        <div class="fixed-holder">
-            <ng-include src=" 'views/elements/_left-side.html' "></ng-include>
-            <ng-include src=" 'views/elements/_header.html' "></ng-include>
-            <ng-include src=" 'views/elements/_right-side.html' "></ng-include>
-        </div>
-
-        <div class="content">
+        <ng-include src=" 'views/elements/_header.html' "></ng-include>
+        <div class="site-content">
             <div ui-view></div>
         </div>
     </div>
@@ -88,5 +87,9 @@
 <script src="js/controllers/Snap-inController.js" type="text/javascript"></script>
 <script src="js/controllers/TechnologyController.js" type="text/javascript"></script>
 <script src="js/controllers/VacancyController.js" type="text/javascript"></script>
+
+<script src="js/stickyMenu.js" type="text/javascript"></script>
+
+
 </body>
 </html>
